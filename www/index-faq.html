@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Dinas Perpustakaan dan Kearsipan Kabupaten Labuhan Batu</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/grid.css">
+</head>
+        <style>
+      .transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, h1, ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*html {*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+ /* perspective: 900;
+  overflow-y: scroll;
+  background-color: #fff;
+  font: normal 15px "Roboto", arial, sans-serif;
+  color: rgba(48, 69, 92, 0.8);
+}
+*/
+/*body {
+  min-height: 0;
+  display: inline-block;
+  position: relative;*/
+  /*left: 50%;*/
+  /*margin: 0px 0;*/
+  /*transform: translate(-50%, 0);*/
+  /*box-shadow: 0 10px 0 0 #ff6873 inset;*/
+  /*background-color: #fefffa;*/
+  /*max-width: 450px;*/
+  /*padding: 30px;*/
+  /*font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+}*/
+body { 
+  background: #fff;
+  color: #777;
+  font: normal 14px "Roboto", arial, sans-serif;
+  font-weight: 100;
+  overflow-x: hidden;
+  display: inline-block;
+  padding: 30px;
+  line-height: 20px;
+}
+@media (max-width: 550px) {
+  body {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
+h1, h2 {
+  color: #811517;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  cursor:pointer;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  /*background-color: #fefffa;*/
+  margin: 0;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+p {
+  /*color: rgba(48, 69, 92, 0.8);
+  font-size: 14px;
+  line-height: 16px;*/
+  letter-spacing: 1px;
+  /*position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: 100;*/
+}
+ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+ul li:nth-of-type(1) {animation-delay: 0.5s;}
+ul li:nth-of-type(2) {animation-delay: 0.75s;}
+ul li:nth-of-type(3) {animation-delay: 1s;}
+ul li:nth-of-type(4) {animation-delay: 0.5s;}
+ul li:nth-of-type(5) {animation-delay: 0.75s;}
+ul li:nth-of-type(6) {animation-delay: 1s;}
+ul li:nth-of-type(7) {animation-delay: 0.5s;}
+ul li:nth-of-type(8) {animation-delay: 0.75s;}
+ul li:nth-of-type(9) {animation-delay: 1s;}
+ul li:nth-of-type(10) {animation-delay: 0.5s;}
+ul li:nth-of-type(11) {animation-delay: 0.75s;}
+ul li:nth-of-type(12) {animation-delay: 1s;}
+ul li:nth-of-type(13) {animation-delay: 0.5s;}
+ul li:nth-of-type(14) {animation-delay: 0.75s;}
+ul li:nth-of-type(15) {animation-delay: 1s;}
+ul li:nth-of-type(16) {animation-delay: 0.5s;}
+ul li:nth-of-type(17) {animation-delay: 0.75s;}
+ul li:nth-of-type(18) {animation-delay: 1s;}
+ul li:nth-of-type(19) {animation-delay: 0.5s;}
+ul li:nth-of-type(20) {animation-delay: 0.75s;}
+ul li:nth-of-type(21) {animation-delay: 1s;}
+ul li:nth-of-type(22) {animation-delay: 0.5s;}
+ul li:nth-of-type(23) {animation-delay: 0.75s;}
+ul li:nth-of-type(24) {animation-delay: 1s;}
+ul li:nth-of-type(25) {animation-delay: 0.5s;}
+ul li:nth-of-type(26) {animation-delay: 0.75s;}
+ul li:nth-of-type(27) {animation-delay: 1s;}
+
+ul li:last-of-type {
+  padding-bottom: 0;
+}
+ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #811517;
+  width: 3px;
+  height: 9px;
+}
+ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+  -webkit-transform: translate(-2px, 0) rotate(45deg);
+  -moz-transform: translate(-2px, 0) rotate(45deg);
+  -o-transform: translate(-2px, 0) rotate(45deg);
+  -ms-transform: translate(-2px, 0) rotate(45deg);
+}
+ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+  -webkit-transform: translate(2px, 0) rotate(-45deg);
+  -moz-transform: translate(2px, 0) rotate(-45deg);
+  -o-transform: translate(2px, 0) rotate(-45deg);
+  -ms-transform: translate(2px, 0) rotate(-45deg);
+}
+ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+  -webkit-transform: translate(2px, 0) rotate(45deg);
+  -moz-transform: translate(2px, 0) rotate(45deg);
+  -o-transform: translate(2px, 0) rotate(45deg);
+  -ms-transform: translate(2px, 0) rotate(45deg);
+}
+ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+  -webkit-transform: translate(-2px, 0) rotate(-45deg);
+  -moz-transform: translate(-2px, 0) rotate(-45deg);
+  -o-transform: translate(-2px, 0) rotate(-45deg);
+  -ms-transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+
+/* =Responsive
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 959px) {
+
+}
+/* Tablet Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+}
+
+/* Smaller than 960px */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  h2{font-size: 18px;}
+  h1{font-size: 20px;}
+}
+
+span {margin-left: 20px;}
+
+    </style>
+<body>
+  <ul>
+	<h1 id="b1">+ Umum</h1>
+    <ul id="det1" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apakah itu iLabuhanbatu?</h2>
+        <p>iLabuhanbatu adalah Aplikasi Perpustakaan digital (ePustaka) yang   dilengkapi dengan eReader untuk membaca eBook dan fitur sosial media, dimiliki oleh Badan Perpustakaan Nasional (iLabuhanbatu) kerjasama dengan PT. Woolu Akasara Maya (Aksaramaya) sebagai pengembang aplikasi.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Apakah itu ePustaka?</h2>
+        <p>ePustaka adalah aplikasi perpustakaan digital berisi ribuan koleksi eBook yang bisa dipinjam dan dibaca secara online dan offline melalui dengan berbagai sistem operasi dan perangkat komputer seperti smartphone, tablet, dan desktop/laptop.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Apa syarat untuk pinjam eBook di iLabuhanbatu?</h2>
+        <p>Syarat untuk meminjam eBook di iLabuhanbatu, Anda harus punya:
+          <br><span>&ndash;smartphone berbasis android, ios dan dekstop atau laptop</span>
+          <br><span>&ndash;Ada jaringan internet</span>
+          <br><span>&ndash;Mendaftar menjadi anggota ePustaka iLabuhanbatu melalui aplikasi iLabuhanbatu.</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Apa ketentuan/aturan untuk pinjam eBook di iLabuhanbatu?</h2>
+        <p>Syarat untuk meminjam eBook di iLabuhanbatu, Anda harus punya:
+          <br><span>&ndash;Masa keanggotaan satu tahun dan dapat diperpanjang secara otomatis</span>
+          <br><span>&ndash;Selama menjadi anggota ePustaka iLabuhanbatu, bebas untuk meminjam eBook yang ada.</span>
+          <br><span>&ndash;eBook yang dipinjam hanya dapat dibaca selama 7 hari kalender masehi.</span>
+          <br><span>&ndash;Apabila eBook habis dipinjam maka masuk dalam daftar antri dan bisa meminjam apabila ada user lain yang telah selesai masa pinjamnya.</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Apa itu eReader?</h2>
+        <p>eReader adalah aplikasi untuk membaca eBook dengan format ePub yang dikembangkan oleh Aksaramaya dilengkapi dengan berbagai macam fitur untuk membaca seperti: 
+          <br><span>&ndash;Mengganti latarbelakang warna halaman eBook,</span>
+          <br><span>&ndash;Melihat daftar isi, </span>
+          <br><span>&ndash;Mengganti jenis dan type huruf,</span>
+          <br><span>&ndash;Mengatur besar/kecil ukuran huruf,</span>
+          <br><span>&ndash;Memberi tanda pembatas halaman,</span>
+          <br><span>&ndash;Mengkopi beberapa kata untuk dipublikasikan ke sosial media lain atau</span>
+          <br><span>&ndash;Merekomendasikan ebook yang dibaca ke user lain,</span>
+          <br><span>&ndash;Mencari kata/kalimat dalam eBook,</span>
+          <br><span>&ndash;Mengatur pencahayaan ketika membaca eBook.</span>
+          <br><span>&ndash;Membuat catatan</span>
+        </p>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Dimana saya bisa mengunduh iLabuhanbatu?</h2>
+        <p>Anda dapat mengunduh di Play Store untuk Android, Appstore untuk iOS dengan kata kunci “iLabuhanbatu” dan Anda juga bisa mengunduh melalui Website www.iLabuhanbatu.go.id untuk format hybrid yang diakses menggunakan PC/laptop</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. Berapakah biaya aplikasi iLabuhanbatu?</h2>
+        <p>Untuk aplikasi iLabuhanbatu gratis, tidak berbayar.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. Berapa biaya menjadi anggota ePustaka?</h2>
+        <p>Untuk menjadi anggota ePustaka yang ada di iLabuhanbatu tidak dipungut biaya satu rupiahpun alias gratis.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Mengapa saya harus menggunakan iLabuhanbatu ?</h2>
+        <p>Pengguna iLabuhanbatu dapat saling berteman, berinteraksi serta merekomendasikan buku yang menarik. Pengguna bisa membaca berbagai buku dalam satu aplikasi dengan mudah, praktis dan cepat, kapan saja dan di mana saja. Melalui iLabuhanbatu, pengguna/pembaca dapat berinteraksi dengan penulis.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>j. Apakah iLabuhanbatu mempunyai website yang bisa dikunjungi?</h2>
+        <p>Tentu ada. Anda dapat mengunjungi Website iLabuhanbatu.go.id dan jika Anda ingin mengetahui koleksi buku – buku kunjungi website iLabuhanbatu.co.id</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>k. Dapatkah saya meminjam buku melalui Website iLabuhanbatu.go.id?</h2>
+        <p>Betul. Anda dapat meminjam buku di Website tersebut.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>l. Bisakah saya membaca buku yang telah saya dapatkan di dalam Website iLabuhanbatu.co.id?</h2>
+        <p>Tidak.  Kami tidak menyediakan fitur untuk membaca di Website. Buku – buku hanya dapat dibaca melalui aplikasi iLabuhanbatu.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>m. Apakah itu feed?</h2>
+        <p>Feed merupakan kumpulan informasi yang bersifat public (umum). Informasi yang termasuk kedalam feed adalah:
+          <br><span>&ndash;Followers menambahkan buku</span>
+          <br><span>&ndash;Followers join ePustaka</span>
+          <br><span>&ndash;Perubahan Status Badges User</span>
+          <br><span>&ndash;Buku-buku baru yang ditambahkan di ePustaka yang diikuti</span>
+          <br><span>&ndash;Pemberitahuan dari admin iLabuhanbatu</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>n. Bagaimana cara mengganti nama pengguna di iLabuhanbatu?</h2>
+        <p>Masuk ke halaman profil, lalu tekan icon berbentuk pulpen. Dari situ anda bisa mengganti nama pengguna.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>o. Apa itu status badge?</h2>
+        <p>Status badge merupakan level baca user. Ada beberapa level baca di iLabuhanbatu yaitu Newbie, Bookworm, dan Socializer.
+        <br>Jika ingin naik level maka user harus memenuhi beberapa persyaratan.
+          <br>
+          <br><b>Newbie to Bookworm</b>
+          <br><span>&ndash;Complete Profile</span>
+          <br><span>&ndash;Posted > 5 Comments</span>
+          <br><span>&ndash;Download 10 books to shelf</span>
+          <br><span>&ndash;Open/Read 5 Books</span>
+          <br>
+          <br><b>Bookworm to Socializer</b>
+          <br><span>&ndash;Follow 10 People</span>
+          <br><span>&ndash;Share 10 Times</span>
+          <br><span>&ndash;Recommend 5 Books</span>
+          <br><span>&ndash;Get 10 Followers</span>
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>p. Apakah itu current, want dan history?</h2>
+        <p><b>Current</b> merupakan koleksi buku yang sudah dimiliki. Pada Current, user dapat menghapus koleksi buku yang mungkin sudah tidak ingin dibaca lagi, cukup mudah untuk melakukan penghapusan koleksi buku dengan menggunakan tombol info yang ada di halaman current.
+        <br><b>Want</b> merupakan koleksi buku yang diinginkan oleh user tetapi belum melakukan peminjaman
+        <br><b>History</b> merupakan koleksi buku yang sudah selesai dibaca dengan persentase book finish 100%. Pada history, user dapat juga menghapus koleksi buku-buku yang sudah selesai dibaca tersebut.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>q. Apakah buku-buku yang kita telah dapatkan bisa direview atau diberikan komentar?</h2>
+        <p>Bisa. Jika Anda ingin mereview buku Anda harus membuka detail buku yang ingin Anda review, di tab bagian kanan Anda mendapati tab bertuliskan comment. Disitulah Anda mereview dan mengkomentari review dari pembaca yang lain.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>r. Bagaimana cara mengganti kata sandi/password di iLabuhanbatu?</h2>
+        <p>Untuk mengganti kata sandi/password di iLabuhanbatu, Anda harus masuk ke menu profile kemudian klik icon berbentuk pulpen. Anda pilih/menekan kolom kata sandi/password. Setelah itu layar baru terbuka yang bertuliskan edit password. Dalam layar edit password, Anda diminta memasukan kata sandi/password lama yang Anda gunakan. Kemudian masukan kata sandi/password baru lalu ulangi lagi di kolom konfirmasi password lalu klik tombol save.</p>
+      </li>
+    </ul>
+  <h1 id="b2">+ Memulai Aplikasi</h1>
+    <ul id="det2"  style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Bagaimana cara mendaftar di iLabuhanbatu?</h2>
+        <p>Sebelum login ke iLabuhanbatu, Anda harus memiliki akun iLabuhanbatu terlebih dahulu. Caranya sebagai berikut:
+          <br><span>1. Username  : Nama lengkap</span>
+          <br><span>2. Email     : Alamat email, berfungsi sebagai username untuk Login</span>
+          <br><span>3. Password : Kata kunci untuk masuk ke dalam aplikasi</span>
+          <br><span>4. Confirm Password : mengulangi kata kunci yang sama</span>
+          <br><span>5. Sign up : Untuk mengirimkan registrasi</span>
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Bagaimana cara memulai iLabuhanbatu?</h2>
+        <p>Untuk memulai nya Anda terlebih dahulu masuk melaui menu login. Caranya adalah berikut :
+          <br><span>1. Masukkan email</span>
+          <br><span>2. Masukkan password</span>
+          <br><span>3. Pilih tombol Sign In</span>
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Bagaimana cara saya mengunduh buku di aplikasi iLabuhanbatu?</h2>
+        <p>Untuk mendapatkan buku, Anda harus membuka halaman detail buku. Setelah itu Anda menekan tombol Get Book maka akan keluar pilihan apakah ingin membeli, menyewa ataukah meminjam.Setelah Anda memilih pilihan dan melakukan transaksi hingga selesai, maka buku yang anda pilih terunduh</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Apakah buku yang telah saya unduh akan hilang ketika saya keluar dari iLabuhanbatu?</h2>
+        <p>Tidak. Untuk buku yang Anda sudah miliki akan tersimpan di dalam server kami.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Apakah saya bisa membaca buku yang telah saya unduh melalui aplikasi lain?</h2>
+        <p>Tidak. Untuk buku-buku yang di unduh dari iLabuhanbatu hanya dapat dibaca di iLabuhanbatu saja.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Cara apa saja yang dapat saya gunakan untuk membaca buku digital di iLabuhanbatu?</h2>
+        <p>Anda dapat meminjam/borrow</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. Bagaimana cara meminjam eBook di iLabuhanbatu?</h2>
+        <p>Setelah Anda masuk dalam halaman book detail. Klik Get Book dalam iLabuhanbatu. Anda akan diminta memasukkan kata sandi/password yang sama dengan kata sandi/password untuk masuk dalam iLabuhanbatu. Ketika berhasil memasukan kata sandi/password secara otomatis buku yang Anda beli terunduh.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. Berapa banyak buku yang dapat saya simpan di iLabuhanbatu?</h2>
+        <p>Sebanyak yang bisa Anda pinjam</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Bagaimana cara kita untuk bergabung dalam ePustaka?</h2>
+        <p>Untuk bergabung dengan epustaka, Anda bisa menekan tombol "Join e-Pustaka" Setelah bergabung, semua buku yang terdapat dalam ePustaka bisa anda baca dengan cara dipinjam </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>j. Bagaimana saya bisa melihat notifikasi yang telah saya dapatkan?</h2>
+        <p>Untuk melihat NOTIFIKASI cukup mudah. Anda hanya diminta menekan icon/simbol lonceng yang ada di halaman utama/dashboard.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>k. Bagaimana caranya kita untuk mencari teman di iLabuhanbatu?</h2>
+        <p>Masuk kedalam detail buku kemudian buka tab “is reading” dan “has read”. Di dalam tab tersebut Anda akan menemukan pengguna lain. Silakan pilih pengguna yang ada didalam tab tersebut dengan cara menekan foto. Setelah itu Anda akan masuk ke profile yang terdiri dari informasi pengguna (username, status badges, deskripsi, want list, list follower, list following, dan list reading serta tombol follow). Nah, tombol follow inilah yang digunakan untuk memfollow user lain.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>l. Dapatkah saya  mengirimkan pesan melalui iLabuhanbatu?</h2>
+        <p>Bisa. Anda bisa menggunakan fitur inbox, dimana inbox merupakan fitur yang digunakan untuk melakukan percakapan dengan user lain. Untuk memulai percakapan dengan user yang belum pernah chat, bisa dilakukan dengan cara masuk ke user profile yang akan di ajak chat, klik tombol chat(<img id="Picture 83" src="howto_files/image014.jpg" width="20" height="19" border="0">) yang ada di sebelah kanan atas User Profile, maka akan masuk ke halaman chat.</p>
+      </li>
+    </ul>
+  <h1 id="b3">+ Kompatibilitas</h1>
+    <ul id="det3"  style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apa yang saya perlukan untuk menggunakan iLabuhanbatu?</h2>
+        <p>Anda dapat menggunakan smartphone atau komputer yang Anda miliki.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Apakah saya akan mendapatkan pengalaman yang berbeda ketika menggunakan perangkat mobile dan desktop?</h2>
+        <p>Anda akan mendapatkan tampilan yang berbeda dan sensasi membaca yang berbeda pula.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Persyaratan minimum apakah yang harus saya penuhi agar dapat menggunakan iLabuhanbatu?</h2>
+        <p>Jika Anda menggunakan perangkat OS Android minimum versi OS 4 dan RAM 1 GB. Untuk PC/laptop minimum OS windows 7 dan ram 1GB.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Bahasa apa saja yang di dukung oleh iLabuhanbatu?</h2>
+        <p>Bahasa Indonesia dan Bahasa Inggris</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Apakah membaca menggunakan iLabuhanbatu menguras baterai device saya?</h2>
+        <p>Tidak. Karena aplikasi ini tidak membutuh daya banyak</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Apakah koleksi buku-buku gratis tersedia di iLabuhanbatu?</h2>
+        <p>Ada</p>
+      </li>
+    </ul>
+  <h1 id="b4">+ Alat Pembaca</h1>
+    <ul id="det4" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apakah tampilan membaca di Reader iLabuhanbatu dapat dirubah?</h2>
+        <p>Bisa. Ada tiga tampilan yaitu white, sephia dan night.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b.  Apakah Reader iLabuhanbatu terdapat mode untuk membaca siang hari?</h2>
+        <p>Ada. Anda cukup meningkatkan brightness pada reader Anda.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Fitur apa saja yang terdapat di reader iLabuhanbatu?</h2>
+        <p>Theme, TOC, Bookmark, Style Font, Line & Space, Search, Quote, Share.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Apakah iLabuhanbatu bisa bekerja secara offline?</h2>
+        <p>Bisa. Syaratnya Anda harus login terlebih dahulu sebelum menggunakan iLabuhanbatu dan buku yang Anda ingin baca sudah harus terunduh. Setelah itu, Anda dapat membaca buku secara offline.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Bagaimana memulai untuk membaca buku di iLabuhanbatu?</h2>
+        <p>Dengan menggeser ke arah kanan dari layar  utama, Anda akan mendapatkan layar SHELF dan disana sudah ada bagian CURRENT, WANT dan HISTORY. Dan buku yang ingin Anda baca bisa menekan sampul buku yang Anda pilih.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Apakah itu Bookmark?</h2>
+        <p>Untuk menandai halaman buku.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. Bagaimana melihat daftar isi yang saya punya?</h2>
+        <p>Anda cukup menekan icon  pada reader iLabuhanbatu Anda.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. Dapatkah saya merubah ukuran text di reader iLabuhanbatu?</h2>
+        <p>Bisa dengan cara menekan icon dalam reader MOCO Anda.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Apakah saya harus selalu mengunduh kembali buku yang sudah saya baca sebelumnya di iLabuhanbatu?</h2>
+        <p>Iya. Jika Akun yang Anda pakai di gunakan di device lain.</p>
+      </li>
+    </ul>
+  <h1 id="b5">+ Mengatasi Masalah</h1>
+    <ul id="det5" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apakah yang harus saya lakukan apabila buku yang telah saya beli hilang dan saya harus membelinya kembali?</h2>
+        <p>Tidak. Anda cukup mengunduh ulang buku yang hilang tersebut tanpa Anda harus membelinya.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Bagaimana cara mendapatkan kembali kata kunci apabila saya lupa?</h2>
+        <p>Cukup mudah menggunakan fitur ini, Anda hanya diminta untuk memasukkan email yang sudah terdaftar pada iLabuhanbatu. Setelah itu akan ada email dari noreply@aksaramaya.com yang berisi tentang reset password.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Dimanakah saya bisa mendapatkan dukungan dan bantuan teknis iLabuhanbatu?</h2>
+        <p>Anda dapat menghubungi tim support kami langsung melalui live chat yang ada di website iLabuhanbatu.co.id atau Anda dapat mengirimkan email ke alamat support@iLabuhanbatu.co.id</p>
+      </li>
+    </ul>
+  <script src="javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#b1").click(function(){
+          $("#det1").toggle('slow');
+      });
+      $("#b2").click(function(){
+          $("#det2").toggle('slow');
+      });
+      $("#b3").click(function(){
+          $("#det3").toggle('slow');
+      });
+      $("#b4").click(function(){
+          $("#det4").toggle('slow');
+      });
+      $("#b5").click(function(){
+          $("#det5").toggle('slow');
+      });
+    })
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-51655701-1', 'moco.co.id');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>
